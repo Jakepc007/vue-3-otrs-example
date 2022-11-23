@@ -1,14 +1,26 @@
+another:
+  example: another example
 button:
   about: About
   back: Back
+  changeToFrench: Change to French
   go: GO
   home: Home
+  return: Return
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
+  aka: Also known as
   desc: Opinionated Vite Starter Template
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
-  aka: Also known as
   whats-your-name: What's your name?
-not-found: Not found
+not-found: Route not found
+test: Test
+docs:
+  installation:
+    ubuntu: Ubuntu
+    heading: Installation
+    configuration: Configuration
+    support: Support
+  quick_setup: Quick Setup

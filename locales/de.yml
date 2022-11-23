@@ -11,4 +11,10 @@ intro:
   hi: Hi, {name}!
   aka: Auch bekannt als
   whats-your-name: Wie heißt du?
-not-found: Nicht gefunden
+not-found: Nicht gefunden bro
+docs:
+  installation:
+    heading: Installation
+    configuration: Konfiguration
+    support: Unterstützung
+  quick_setup: quick
