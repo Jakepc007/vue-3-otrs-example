@@ -149,6 +149,16 @@ export default defineConfig({
     script: 'async',
     formatting: 'minify',
     onFinished() { generateSitemap() },
+    includedRoutes(paths, routes) {
+      // not very good but works for simple example
+      // const staticKeywords = ['documentation']
+
+      console.log('paths', paths)
+      console.log('routes', routes)
+      return routes.flatMap((route) => {
+        return route.path.includes('documentation') ? [route.path] : []
+      })
+    },
   },
 
   ssr: {

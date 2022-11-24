@@ -11,10 +11,43 @@ intro:
   hi: Hi, {name}!
   aka: Auch bekannt als
   whats-your-name: Wie heißt du?
-not-found: Nicht gefunden bro
-docs:
+not-found: Nicht gefunden
+customers: Kunden
+tickets: Tickets
+app:
+  customer:
+    heading:
+      assigned_tickets: Zugewiesene Tickets
+      name: Name
+  ticket:
+    heading:
+      articles: Artikel
+      title: Titel
+documentation:
+  home: "Home"
+  about: 
+    title: "Über"
+  here: "hier"
+  current_language_notice: Sie verwenden derzeit das deutsche Gebietsschema, unten rechts können Sie dies bei Bedarf ändern.
+  intro: >-
+    Willkommen bei der offiziellen OTRS-Dokumentation/dem Leitfaden. Mit Hilfe der Seitenleiste können Sie einfach zu dem jeweiligen Thema navigieren. Wenn Sie gerade erst anfangen, schauen Sie sich die Installationsanleitung von
+  wip_notice: Die Dokumentation für das Seite ist derzeit noch in Arbeit, bitte schauen Sie später wieder vorbei oder lesen Sie die
+  old_documentation_notice: alte Dokumentation
+  title: "Dokumentation"
+  # intro: >-
+  #   Die Dokumentation ist derzeit noch in Arbeit, bitte schauen Sie später wieder vorbei oder lesen Sie die
+  # old_documentation_notice:alte Dokumentation
+  otrs_documentation: "OTRS Dokumentation"
   installation:
-    heading: Installation
-    configuration: Konfiguration
-    support: Unterstützung
-  quick_setup: quick
+    title: "Installation"
+    ubuntu:
+      title: "Ubuntu"
+    debian:
+      title: "Debian"
+  configuration:
+    title: "Configuration (this is a long title to demo scrolling)"
+index:
+  dashboard: Dashboard
+  documentation: Dokumentation
+  explore-dashboard: Einstieg in das OTRS-Dashboard
+  explore-docs: Erkunden Sie die OTRS-Dokumentation

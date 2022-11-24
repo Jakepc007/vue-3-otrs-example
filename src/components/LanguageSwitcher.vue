@@ -1,11 +1,12 @@
 <script setup lang='ts'>
-const { locale: selectedLocale, availableLocales } = useI18n()
+const { locale: selectedLocale, shuffleLocale } = useLocale()
 </script>
 
 <template>
-  <select v-model="selectedLocale">
-    <option v-for="locale in availableLocales" :key="locale" :value="locale">
-      {{ locale }}
-    </option>
-  </select>
+  <div
+    class="flex gap-2 items-center pa-2 border-2 rounded-md transition hover:bg-gray-200 cursor-pointer active:!bg-gray-300"
+    @click="shuffleLocale">
+    <div class="i-carbon-language"></div>
+    <div>{{ selectedLocale }}</div>
+  </div>
 </template>

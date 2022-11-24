@@ -1,5 +1,10 @@
 another:
   example: another example
+app:
+  customer:
+    heading:
+      assigned_tickets: Assigned Tickets
+      name: Name
 button:
   about: About
   back: Back
@@ -9,6 +14,43 @@ button:
   return: Return
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
+customers: Customers
+documentation:
+  about:
+    title: About
+  configuration:
+    title: Configuration (this is a long title to demo scrolling)
+  current_language_notice: >-
+    You are currently using the english locale, in the bottom left you can
+    change this if needed.
+  here: here
+  home: Home
+  installation:
+    debian:
+      intro: To install OTRS on your Debian system, do the following...
+      step:
+        '1': ensure you're using debian 10 (buster) or above
+        '2': clone the OTRS repository
+      title: Debian
+    title: Installation
+    ubuntu:
+      title: Ubuntu
+  intro: >-
+    Welcome to the official OTRS documentation/guide. Using the sidebar you can
+    easily navigate to the the topic, if you're just getting started, check out
+    the installation guide from
+  old_documentation_notice: old documentation
+  otrs_documentation: OTRS Documentation
+  title: Documentation
+  wip_notice: >-
+    The documentation for this page is currently work in progress, please check
+    back later or refer to the
+go-back: Return to last page
+index:
+  dashboard: Dashboard
+  documentation: Documentation
+  explore-dashboard: Enter the OTRS dashboard
+  explore-docs: Explore the OTRS documentation
 intro:
   aka: Also known as
   desc: Opinionated Vite Starter Template
@@ -17,10 +59,3 @@ intro:
   whats-your-name: What's your name?
 not-found: Route not found
 test: Test
-docs:
-  installation:
-    ubuntu: Ubuntu
-    heading: Installation
-    configuration: Configuration
-    support: Support
-  quick_setup: Quick Setup

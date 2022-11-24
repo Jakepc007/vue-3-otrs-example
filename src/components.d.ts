@@ -8,12 +8,18 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Contents: typeof import('./components/docs/Contents.vue')['default']
+    copy: typeof import('./components/TicketTable copy.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
-    Footer: typeof import('./components/Footer.vue')['default']
+    CustomerTable: typeof import('./components/CustomerTable.vue')['default']
+    Footer: typeof import('./components/Topbar.vue')['default']
     Heading: typeof import('./components/docs/Heading.vue')['default']
     LanguageSwitcher: typeof import('./components/LanguageSwitcher.vue')['default']
     README: typeof import('./components/README.md')['default']
+    RouteItem: typeof import('./components/RouteItem.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SearchBar: typeof import('./components/SearchBar.vue')['default']
+    TicketTable: typeof import('./components/TicketTable.vue')['default']
+    Topbar: typeof import('./components/Topbar.vue')['default']
   }
 }

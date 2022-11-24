@@ -12,46 +12,33 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div>
-    <div text-4xl>
-      <div i-carbon-campsite inline-block />
-    </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
-      </a>
-    </p>
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
-    </p>
+  <div class="container mx-auto">
+    <div class="flex flex-col w-80 mx-auto max-w-4/5 justify-center gap-4">
+      <RouterLink to="/app"
+        class="bg-white dark:bg-black shadow-xl rounded-md transition flex gap-4 p-4 text-left flex-col border-3 border-transparent hover:border-red-800 active:border-red-700">
+        <div class="flex gap-3 items-center">
+          <div class="rounded-md bg-red-800 flex justify-center items-center w-12 h-8">
+            <div class="i-carbon-dashboard text-white" />
+          </div>
+          <div>{{ t('index.dashboard') }}</div>
+        </div>
+        <div>
+          <div class="text-sm dark:text-neutral-400 text-neutral-500">{{ t('index.explore-dashboard') }}</div>
+        </div>
+      </RouterLink>
 
-    <div py-4 />
-
-    <input
-      id="input"
-      v-model="name"
-      :placeholder="t('intro.whats-your-name')"
-      :aria-label="t('intro.whats-your-name')"
-      type="text"
-      autocomplete="false"
-      p="x4 y2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
-      @keydown.enter="go"
-    >
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
-
-    <div>
-      <button
-        btn m-3 text-sm
-        :disabled="!name"
-        @click="go"
-      >
-        {{ t('button.go') }}
-      </button>
+      <RouterLink to="/documentation"
+        class="bg-white dark:bg-black shadow-xl rounded-md transition flex gap-4 p-4 text-left flex-col border-3 border-transparent hover:border-blue-800 active:border-blue-700">
+        <div class="flex gap-3 items-center">
+          <div class="rounded-md bg-blue-800 flex justify-center items-center w-12 h-8">
+            <div class="i-carbon-book text-white" />
+          </div>
+          <div>{{ t('index.documentation') }}</div>
+        </div>
+        <div>
+          <div class="text-sm dark:text-neutral-400 text-neutral-500">{{ t('index.explore-docs') }}</div>
+        </div>
+      </RouterLink>
     </div>
   </div>
 </template>
