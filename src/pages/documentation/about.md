@@ -2,7 +2,7 @@
 title: About
 ---
 
-[Vitesse](https://github.com/antfu/vitesse) is an opinionated [Vite](https://github.com/vitejs/vite) starter template made by [@antfu](https://github.com/antfu) for mocking apps swiftly. With **file-based routing**, **components auto importing**, **markdown support**, I18n, PWA and uses **UnoCSS** for styling and icons.
+Example repo for vue 3 
 
 ```js
 // syntax highlighting example
@@ -12,4 +12,4 @@ function vitesse() {
 }
 ```
 
-Check out the [GitHub repo](https://github.com/antfu/vitesse) for more details.
+Extends [Vitesse](https://github.com/antfu/vitesse) (an extensive vue 3 starter project)
