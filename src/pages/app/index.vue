@@ -6,7 +6,20 @@
 </template>
 
 <script setup lang="ts">
+import { exampleKey } from '~/keys';
+
 const { compact } = useCompact()
+
+let value = ref('hello')
+
+const updateValue = (newValue: string) => {
+    value.value = newValue
+}
+
+provide(exampleKey, {
+  value,
+  setValue: updateValue
+})
 </script>
 
 <route lang="yaml">

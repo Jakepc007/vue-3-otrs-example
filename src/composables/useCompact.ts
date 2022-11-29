@@ -5,9 +5,6 @@ const toggleCompact = () => {
 }
 
 export default () => {
-    return { compact, toggleCompact }
+    const readonlyCompact = readonly(compact)
+    return { compact: readonlyCompact, toggleCompact }
 }
-
-
-
-

@@ -14,6 +14,8 @@ declare module '@vue/runtime-core' {
     Footer: typeof import('./components/Topbar.vue')['default']
     Heading: typeof import('./components/docs/Heading.vue')['default']
     LanguageSwitcher: typeof import('./components/LanguageSwitcher.vue')['default']
+    NavAside: typeof import('./components/NavAside.vue')['default']
+    NavItem: typeof import('./components/NavItem.vue')['default']
     README: typeof import('./components/README.md')['default']
     RouteItem: typeof import('./components/RouteItem.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

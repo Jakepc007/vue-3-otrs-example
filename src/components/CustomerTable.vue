@@ -7,8 +7,8 @@
             <thead>
                 <tr>
                     <th class="px-4 py-2">ID</th>
-                    <th class="px-4 py-2">{{$t('app.customer.heading.name')}}</th>
-                    <th class="px-4 py-2">{{$t('app.customer.heading.assigned_tickets')}}</th>
+                    <th class="px-4 py-2">{{                                               $t('app.customer.heading.name')                                               }}</th>
+                    <th class="px-4 py-2">{{                                               $t('app.customer.heading.assigned_tickets')                                               }}</th>
                 </tr>
             </thead>
             <tbody class="dark:text-sky-200">
@@ -28,6 +28,15 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts">import { RouterLink } from 'vue-router';
+import { exampleKey } from '~/keys';
+
 const { tickets } = useTicketStore()
+const injectedValue = inject(exampleKey);
+
+if (injectedValue?.value) {
+    watch(injectedValue.value, (value) => {
+        console.log("changed: ", value)
+    })
+}
 </script>

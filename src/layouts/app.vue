@@ -3,14 +3,7 @@
     <Topbar class="mb-4 pt-4" />
     <div class="relative flex items-center container mx-auto mb-8">
       <search-bar class="relative" />
-      <div class="absolute left-0 flex gap-4">
-        <router-link to="/">
-          <div i="carbon-home" />
-        </router-link>
-        <router-link to="/app">
-          <div i="carbon-dashboard" />
-        </router-link>
-      </div>
+      <nav-aside />
     </div>
     <router-view v-slot="{ Component, route }">
       <transition mode="out-in" name="drop">

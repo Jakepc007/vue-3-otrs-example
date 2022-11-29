@@ -7,8 +7,8 @@
             <thead>
                 <tr>
                     <th class="px-4 py-2">ID</th>
-                    <th class="px-4 py-2">{{$t('app.customer.heading.name')}}</th>
-                    <th class="px-4 py-2">{{$t('app.customer.heading.name')}}</th>
+                    <th class="px-4 py-2">{{                                        $t('app.customer.heading.name')                                        }}</th>
+                    <th class="px-4 py-2">{{                                        $t('app.customer.heading.name')                                        }}</th>
                 </tr>
             </thead>
             <tbody class="dark:text-sky-200">
@@ -29,5 +29,17 @@
 </template>
 
 <script setup lang="ts">
+import { exampleKey } from '~/keys';
+
 const { tickets } = useTicketStore()
+let injectedValue = inject(exampleKey);
+console.log(injectedValue)
+
+setTimeout(() => {
+    console.log("trig")
+    console.log(injectedValue?.value.value)
+    if (injectedValue?.value.value) {
+        injectedValue.setValue("hola")
+    }
+}, 50)
 </script>

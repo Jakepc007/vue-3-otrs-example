@@ -1,4 +1,5 @@
-import { type ViteSSGContext } from 'vite-ssg'
+import { type ViteSSGContext } from 'vite-ssg';
+import { Ref } from 'vue';
 
 export type UserModule = (ctx: ViteSSGContext) => void
 
@@ -26,4 +27,15 @@ export interface Customer {
     id: number
     name: string
     assignedTickets?: number[]
+}
+
+export interface ExampleKey {
+    value: Ref<string>,
+    setValue: (value: string) => void
+}
+
+export interface Route {
+    path: string;
+    name: string;
+    icon: string;
 }
