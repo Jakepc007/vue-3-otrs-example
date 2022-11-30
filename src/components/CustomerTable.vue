@@ -7,8 +7,8 @@
             <thead>
                 <tr>
                     <th class="px-4 py-2">ID</th>
-                    <th class="px-4 py-2">{{                                               $t('app.customer.heading.name')                                               }}</th>
-                    <th class="px-4 py-2">{{                                               $t('app.customer.heading.assigned_tickets')                                               }}</th>
+                    <th class="px-4 py-2">{{ $t('app.customer.heading.name') }}</th>
+                    <th class="px-4 py-2">{{ $t('app.customer.heading.assigned_tickets') }}</th>
                 </tr>
             </thead>
             <tbody class="dark:text-sky-200">
@@ -34,9 +34,11 @@ import { exampleKey } from '~/keys';
 const { tickets } = useTicketStore()
 const injectedValue = inject(exampleKey);
 
-if (injectedValue?.value) {
+if (injectedValue) {
     watch(injectedValue.value, (value) => {
-        console.log("changed: ", value)
+        console.log("value changed: ", value)
     })
+} else {
+    console.log("no example provided")
 }
 </script>

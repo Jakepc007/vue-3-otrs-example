@@ -2,14 +2,11 @@
 import { TreeItem } from "~/types";
 import generatedRoutes from "~pages";
 
-console.log("routes", generatedRoutes);
-
 let docRoutes = generatedRoutes
     .map((r) => r.path.split("/").filter(Boolean))
     .filter((r) => r[0] == "documentation");
 console.log(docRoutes);
 
-const headingWrap = ref(false);
 const tree = docRoutes.map((r) => {
     let path = "/" + r.join("/");
     let name = r[r.length - 1];

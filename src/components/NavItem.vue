@@ -1,6 +1,6 @@
 <template>
     <router-link :to="option.path">
-        <div :class="isOptionActive ? 'text-blue-400' : ''" :i="option.icon" />
+        <div :class="isOptionActive ? 'text-blue-400' : ''">{{option.name}}</div>
     </router-link>
 </template>
 

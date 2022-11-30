@@ -8,10 +8,8 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Contents: typeof import('./components/docs/Contents.vue')['default']
-    copy: typeof import('./components/TicketTable copy.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
     CustomerTable: typeof import('./components/CustomerTable.vue')['default']
-    Footer: typeof import('./components/Topbar.vue')['default']
     Heading: typeof import('./components/docs/Heading.vue')['default']
     LanguageSwitcher: typeof import('./components/LanguageSwitcher.vue')['default']
     NavAside: typeof import('./components/NavAside.vue')['default']

@@ -1,18 +1,17 @@
-
-const locale = useStorage('locale', 'en')
+const preferredLocale = useStorage('locale', 'en')
 
 export default () => {
     const { locale: currentLocale, availableLocales } = useI18n();
-    watch(locale, () => {
-        currentLocale.value = locale.value;
+    watch(preferredLocale, () => {
+        currentLocale.value = preferredLocale.value;
     })
     
     const shuffleLocale = () => {
         const total = availableLocales.length;
         const index = availableLocales.indexOf(currentLocale.value);
         const nextIndex = (index + 1) % total;
-        locale.value = availableLocales[nextIndex];
+        preferredLocale.value = availableLocales[nextIndex];
     }
 
-    return { locale, shuffleLocale }
+    return { locale: preferredLocale, shuffleLocale }
 }
