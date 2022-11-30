@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full gap-6" :class="compact ? 'flex-col' : ''">
+    <div class="flex w-full gap-6" :class="compact ? 'flex-col' : ' items-start'">
         <TicketTable />
         <CustomerTable />
     </div>

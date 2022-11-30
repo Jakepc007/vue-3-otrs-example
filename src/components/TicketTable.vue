@@ -7,8 +7,8 @@
             <thead>
                 <tr>
                     <th class="px-4 py-2">ID</th>
-                    <th class="px-4 py-2">{{                                        $t('app.customer.heading.name')                                        }}</th>
-                    <th class="px-4 py-2">{{                                        $t('app.customer.heading.name')                                        }}</th>
+                    <th class="px-4 py-2">{{ $t('app.customer.heading.name') }}</th>
+                    <th class="px-4 py-2">{{ $t('app.customer.heading.customers') }}</th>
                 </tr>
             </thead>
             <tbody class="dark:text-sky-200">
@@ -19,9 +19,11 @@
                     <td class="px-4 py-2">{{ ticket.id }}</td>
                     <td class="px-4 py-2">{{ ticket.title }}</td>
                     <td class="px-4 py-2">{{ ticket.articles.length }}</td>
-                    <!-- <td class="px-4 py-ˇ2 text-xs"><router-link :to="'/app/ticket/' + ticket.id"><div i="carbon-link" /></router-link></td> -->
-                    <router-link :to="'/app/ticket/' + ticket.id" class="absolute top-0 left-0 right-0 bottom-0 ">
-                    </router-link>
+                    <td class="px-4 py-ˇ2 text-xs"><router-link :to="'/app/ticket/' + ticket.id">
+                            <div i="carbon-link" />
+                        </router-link></td>
+                    <!-- <router-link :to="'/app/ticket/' + ticket.id" class="absolute top-0 left-0 right-0 bottom-0 "> -->
+                    <!-- </router-link> -->
                 </tr>
             </tbody>
         </table>

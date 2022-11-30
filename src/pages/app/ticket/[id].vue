@@ -9,23 +9,23 @@
                 <div>
                     <div class="text-sm">Customers</div>
                     <router-link :to="'/app/customer/' + customer.id" v-for="customer in customers">
-                        <div class="flex gap-2 items-center transition group hover:brightness-90 active:brightness-80 text-lg">
-                            <div i="carbon-arrow-right" class="text-xs group-hover:translate-x-1 transform transition" />
+                        <div
+                            class="flex gap-2 items-center transition group hover:brightness-90 active:brightness-80 text-lg">
+                            <div i="carbon-arrow-right"
+                                class="text-xs group-hover:translate-x-1 transform transition" />
                             {{ customer.name }}
                         </div>
                     </router-link>
                 </div>
             </div>
 
-
             <div class="text-sm mt-8 mb-2">Articles</div>
-            <div class="flex flex-col gap-2">
-                <div v-for="article in ticket.articles" class="flex-col bg-white dark:bg-sky-800 rounded-md shadow-md">
-                    <div class="px-4 py-2 border-b-2 text-xl">{{ article.title }}</div>
+            <div class="flex flex-col transition-all delay-200 duration-500 rounded-md" :class="compact ? 'gap-0 ' :'gap-2'">
+                <div v-for="article in ticket.articles" class="flex-col bg-white dark:bg-sky-800 transition-all" :class="compact ? 'rounded-sm' :'rounded-md shadow-md'">
+                    <div class="px-4 py-2 text-xl transition-all" :class="compact ? 'border-b-0 pb-0' :'border-b-2'">{{ article.title }}</div>
                     <div class="px-4 py-2 text-sm">{{ article.body }}</div>
                 </div>
             </div>
-
         </div>
         <div v-else>
             Ticket not found
@@ -36,6 +36,7 @@
 <script setup lang="ts">
 const { getTicketById } = useTicketStore();
 const { getCustomersByTicketId } = useCustomerStore()
+const { compact } = useCompact()
 
 const { params } = useRoute()
 

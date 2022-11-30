@@ -3,7 +3,8 @@ another:
 app:
   customer:
     heading:
-      assigned_tickets: Assigned Tickets
+      assigned_tickets: Tickets
+      customers: Customers
       name: Name
 button:
   about: About
