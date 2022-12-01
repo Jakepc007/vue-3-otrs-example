@@ -132,7 +132,8 @@ declare global {
   const useColorMode: typeof import('@vueuse/core')['useColorMode']
   const useCompact: typeof import('./composables/useCompact')['default']
   const useConfirmDialog: typeof import('@vueuse/core')['useConfirmDialog']
-  const useCounter: typeof import('@vueuse/core')['useCounter']
+  const useCounter: typeof import('./composables/useCounter')['default']
+  const useCounterMixin: typeof import('./composables/useCounterMixin')['default']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVar: typeof import('@vueuse/core')['useCssVar']
   const useCssVars: typeof import('vue')['useCssVars']
@@ -241,7 +242,6 @@ declare global {
   const useThrottle: typeof import('@vueuse/core')['useThrottle']
   const useThrottleFn: typeof import('@vueuse/core')['useThrottleFn']
   const useThrottledRefHistory: typeof import('@vueuse/core')['useThrottledRefHistory']
-  const useTicket: typeof import('./composables/useTicket')['default']
   const useTicketStore: typeof import('./store/ticket')['useTicketStore']
   const useTimeAgo: typeof import('@vueuse/core')['useTimeAgo']
   const useTimeout: typeof import('@vueuse/core')['useTimeout']
@@ -418,7 +418,8 @@ declare module 'vue' {
     readonly useColorMode: UnwrapRef<typeof import('@vueuse/core')['useColorMode']>
     readonly useCompact: UnwrapRef<typeof import('./composables/useCompact')['default']>
     readonly useConfirmDialog: UnwrapRef<typeof import('@vueuse/core')['useConfirmDialog']>
-    readonly useCounter: UnwrapRef<typeof import('@vueuse/core')['useCounter']>
+    readonly useCounter: UnwrapRef<typeof import('./composables/useCounter')['default']>
+    readonly useCounterMixin: UnwrapRef<typeof import('./composables/useCounterMixin')['default']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVar: UnwrapRef<typeof import('@vueuse/core')['useCssVar']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
@@ -527,7 +528,6 @@ declare module 'vue' {
     readonly useThrottle: UnwrapRef<typeof import('@vueuse/core')['useThrottle']>
     readonly useThrottleFn: UnwrapRef<typeof import('@vueuse/core')['useThrottleFn']>
     readonly useThrottledRefHistory: UnwrapRef<typeof import('@vueuse/core')['useThrottledRefHistory']>
-    readonly useTicket: UnwrapRef<typeof import('./composables/useTicket')['default']>
     readonly useTicketStore: UnwrapRef<typeof import('./store/ticket')['useTicketStore']>
     readonly useTimeAgo: UnwrapRef<typeof import('@vueuse/core')['useTimeAgo']>
     readonly useTimeout: UnwrapRef<typeof import('@vueuse/core')['useTimeout']>

@@ -2,6 +2,7 @@ const preferredLocale = useStorage('locale', 'en')
 
 export default () => {
     const { locale: currentLocale, availableLocales } = useI18n();
+    
     watch(preferredLocale, () => {
         currentLocale.value = preferredLocale.value;
     })

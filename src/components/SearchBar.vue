@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-50 mx-auto items-center flex">
+    <div class="relative w-50 ml-auto mr-20 items-center flex">
         <div class="absolute left-2 i-carbon-search"></div>
         <input ref="searchBar" class="rounded-md overflow-hidden pr-2 py-2 dark:bg-sky-700 pl-8" v-model="input" />
         <transition name="slide">

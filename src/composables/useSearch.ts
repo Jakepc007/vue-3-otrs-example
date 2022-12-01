@@ -23,3 +23,5 @@ export default (element: Ref<HTMLElement | null>, { autofocus = false, shouldLog
 
     return { input }
 }
+
+
