@@ -21,7 +21,7 @@
 
             <div class="text-sm mt-8 mb-2">Articles</div>
             <div class="flex flex-col transition-all delay-200 duration-500 rounded-md" :class="compact ? 'gap-0 ' :'gap-2'">
-                <div v-for="article in ticket.articles" class="flex-col bg-white dark:bg-sky-800 transition-all" :class="compact ? 'rounded-sm' :'rounded-md shadow-md'">
+                <div v-for="article in ticket.articles" class="flex-col bg-white dark:bg-sky-800 transition-all" :class="compact ? 'rounded-none' :'rounded-md shadow-md'">
                     <div class="px-4 py-2 text-xl transition-all" :class="compact ? 'border-b-0 pb-0' :'border-b-2'">{{ article.title }}</div>
                     <div class="px-4 py-2 text-sm">{{ article.body }}</div>
                 </div>

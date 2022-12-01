@@ -8,7 +8,7 @@
                 <tr>
                     <th class="px-4 py-2">ID</th>
                     <th class="px-4 py-2">{{ $t('app.customer.heading.name') }}</th>
-                    <th class="px-4 py-2">{{ $t('app.customer.heading.customers') }}</th>
+                    <th class="px-4 py-2">{{ $t('app.ticket.articleCount') }}</th>
                 </tr>
             </thead>
             <tbody class="dark:text-sky-200">

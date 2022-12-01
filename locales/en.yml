@@ -6,6 +6,8 @@ app:
       assigned_tickets: Tickets
       customers: Customers
       name: Name
+  ticket:
+    articleCount: Articles
 button:
   about: About
   back: Back
